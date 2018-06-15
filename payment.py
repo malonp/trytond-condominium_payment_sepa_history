@@ -26,8 +26,7 @@ from trytond.pool import PoolMeta
 __all__ = ['CondoMandate']
 
 
-class CondoMandate:
-    __metaclass__ = PoolMeta
+class CondoMandate(metaclass=PoolMeta):
     __name__ = 'condo.payment.sepa.mandate'
 
     @classmethod

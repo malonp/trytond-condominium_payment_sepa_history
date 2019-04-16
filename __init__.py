@@ -25,6 +25,4 @@ from .payment import *
 
 
 def register():
-    Pool.register(
-        CondoMandate,
-        module='condominium_payment_sepa_history', type_='model')
+    Pool.register(CondoMandate, module='condominium_payment_sepa_history', type_='model')

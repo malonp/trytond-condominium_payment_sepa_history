@@ -23,13 +23,13 @@
 from trytond.pool import PoolMeta
 
 
-__all__ = ['CondoMandate']
+__all__ = ['Mandate']
 
 
-class CondoMandate(metaclass=PoolMeta):
+class Mandate(metaclass=PoolMeta):
     __name__ = 'condo.payment.sepa.mandate'
 
     @classmethod
     def __setup__(cls):
-        super(CondoMandate, cls).__setup__()
+        super(Mandate, cls).__setup__()
         cls._history = True
